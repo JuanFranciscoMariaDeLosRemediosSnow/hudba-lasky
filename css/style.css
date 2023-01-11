@@ -173,7 +173,7 @@ a {
 }
 @media screen and (max-width: 1250px) {
   .trio-popis,
-.trio-fotka {
+  .trio-fotka {
     padding-top: 8em;
   }
   .au-nadpis {
