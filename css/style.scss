@@ -10,6 +10,11 @@
   src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
 // VARIABLES
 
 $bg-color-1: #FA9494;
@@ -17,7 +22,7 @@ $bg-color-1: #FA9494;
 // GENERAL
 
 html{
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', 'Montserrat';
     text-align: center;
     //scroll-behavior: smooth;
 }
