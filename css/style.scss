@@ -19,10 +19,10 @@ $bg-color-1: #FA9494;
 html{
     font-family: 'Quicksand';
     text-align: center;
-    scroll-behavior: smooth;
+    //scroll-behavior: smooth;
 }
 
-body {height: 500vh;}
+//body {height: 500vh;}
 
 .container {
 margin: 0 4em;
@@ -149,8 +149,11 @@ a {
 // VIDEO
 
 #video {
-  background-color: #1A120B;
+  background-color: #272727;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .three {
@@ -159,6 +162,30 @@ a {
     border-radius: 1em;
     overflow: hidden;
   }
+}
+
+.prac {
+  color: white;
+}
+
+// REVIEWS
+
+#reviews {
+  background-color: $bg-color-1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// CONTACT
+
+#contact {
+  background-color: #181818;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // MEDIA

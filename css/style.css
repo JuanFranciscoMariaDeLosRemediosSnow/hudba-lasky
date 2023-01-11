@@ -10,11 +10,6 @@
 html {
   font-family: "Quicksand";
   text-align: center;
-  scroll-behavior: smooth;
-}
-
-body {
-  height: 500vh;
 }
 
 .container {
@@ -132,8 +127,11 @@ a {
 }
 
 #video {
-  background-color: #1A120B;
+  background-color: #272727;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .three {
@@ -142,6 +140,26 @@ a {
 .three div {
   border-radius: 1em;
   overflow: hidden;
+}
+
+.prac {
+  color: white;
+}
+
+#reviews {
+  background-color: #FA9494;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  background-color: #181818;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1350px) {
