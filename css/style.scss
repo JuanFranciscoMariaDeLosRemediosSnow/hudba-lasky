@@ -70,6 +70,10 @@ a {
   }
 }
 
+.logo-br {
+  display: none;
+}
+
 .nav {
   display: flex;
   gap: 2em;
@@ -248,19 +252,17 @@ a {
   }
 
   .panel {
-    display: flex;
-    gap: 1em;
-    align-items: center;
     font-size: 1em;
-    font-weight: 100;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .social {
+    display: none;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .social {
-    display: none;
-  }
-
   #aboutus {
     overflow: hidden;
   }
@@ -277,6 +279,52 @@ a {
 
   .trio-fotka {
     padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    margin: 0 1em;
+  }
+
+  .logo {
+    font-size: 2em;
+  }
+
+  .panel {
+    font-size: 0.8em;
+    gap: 0.5em;
+  }
+
+  .au-nadpis {
+    font-size: 2em;
+  }
+
+  .au-text {
+    font-size: 1em;
+    line-height: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    font-size: 1.6em;
+  }
+
+  .panel {
+    letter-spacing: 0em;
+    font-size: 0.8em;
+    gap: 0.4em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu .container {
+    margin: 0 0.2em;
+  }
+
+  .logo-br {
+    display: block;
   }
 }
 
