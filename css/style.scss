@@ -63,6 +63,10 @@ a {
   font-weight: 100;
   font-size: 3em;
   color: white;
+  &:focus,
+  &:hover {
+    color: $bg-color-1;
+  }
 }
 
 .nav {
@@ -92,15 +96,17 @@ a {
   }
 }
 
-// MAIN
+// TOP
 
-.top {
+#top {
   min-height: 100vh;
   background: url(../img/top.jpg);
   background-size: cover;
   background-position-x: center;
   background-position-y: 0px;
 }
+
+// ABOUTUS
 
 #aboutus {
   background-color: $bg-color-1;
@@ -137,6 +143,21 @@ a {
 .trio-popis,
 .trio-fotka {
   padding-top: 3em;
+}
+
+// VIDEO
+
+#video {
+  background-color: #1A120B;
+  min-height: 100vh;
+}
+
+.three {
+  display: flex;
+  & div {
+    border-radius: 1em;
+    overflow: hidden;
+  }
 }
 
 // MEDIA

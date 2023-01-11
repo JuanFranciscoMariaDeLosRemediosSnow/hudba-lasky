@@ -56,6 +56,9 @@ a {
   font-size: 3em;
   color: white;
 }
+.logo:focus, .logo:hover {
+  color: #FA9494;
+}
 
 .nav {
   display: flex;
@@ -82,7 +85,7 @@ a {
   color: #FA9494;
 }
 
-.top {
+#top {
   min-height: 100vh;
   background: url(../img/top.jpg);
   background-size: cover;
@@ -125,6 +128,19 @@ a {
 .trio-popis,
 .trio-fotka {
   padding-top: 3em;
+}
+
+#video {
+  background-color: #1A120B;
+  min-height: 100vh;
+}
+
+.three {
+  display: flex;
+}
+.three div {
+  border-radius: 1em;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1350px) {
