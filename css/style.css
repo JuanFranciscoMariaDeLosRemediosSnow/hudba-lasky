@@ -281,6 +281,16 @@ a {
   .logo-br {
     display: block;
   }
+  .trio-popis {
+    padding-top: 4em;
+  }
+  .au-nadpis {
+    font-size: 1.3em;
+  }
+  .au-text {
+    font-size: 0.8em;
+    line-height: 0.8em;
+  }
 }
 @media screen and (orientation: portrait) {
   main {
