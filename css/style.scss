@@ -1,0 +1,243 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+@font-face {
+  font-family: DS;
+  src: url(../fonts/DS/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Quiscksand;
+  src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+// VARIABLES
+
+$bg-color-1: #FA9494;
+
+// GENERAL
+
+html{
+    font-family: 'Quicksand';
+    text-align: center;
+}
+
+body {height: 500vh;}
+
+.container {
+margin: 0 4em;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+// HEADER
+.menu {
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  right: 0;
+  left: 0;
+}
+
+.vrch {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  letter-spacing: 0.1em;
+  height: 5em;
+}
+
+.logo {
+  font-family: 'DS';
+  font-weight: 100;
+  font-size: 3em;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  gap: 2em;
+}
+
+.panel {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 100;
+  & a:focus,
+  & a:hover {
+    color: $bg-color-1;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 0.5em;
+  font-size: 1.2em;
+  & a:focus,
+  & a:hover {
+    color: $bg-color-1;
+  }
+}
+
+// MAIN
+
+.top {
+  min-height: 100vh;
+  background: url(../img/top.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 0px;
+}
+
+#aboutus {
+  background-color: $bg-color-1;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.au-nadpis {
+  font-size: 2.9em;
+  margin: 2em;
+}
+
+.au-text {
+  text-align: justify;
+  font-size: 1.6em;
+  line-height: 1.3em;
+}
+
+.two {
+  display: flex;
+  gap: 1em;
+}
+
+.trio {
+  max-height: calc(100vh - 3em);
+  padding: 0 5em;
+}
+
+.trio-popis {
+  color: white;
+  padding: 0 2em;
+}
+
+.trio-popis,
+.trio-fotka {
+  padding-top: 3em;
+}
+
+// MEDIA
+@media screen and (max-width: 1350px) {
+  .au-nadpis {
+    margin: 1.5em auto;
+  }
+  
+  .au-text {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .trio-popis,
+  .trio-fotka {
+    padding-top: 8em;
+  }
+
+  .au-nadpis {
+    margin: 1em auto;
+  }
+  
+  .trio {
+    max-height: 80vh;
+    padding: 0 2em;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .au-text {
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+
+  .trio {
+    max-height: 70vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    margin: 0 2em;
+  }
+  
+  .trio-popis {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .trio {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    font-size: 2.5em;
+  }
+
+  .panel {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 100;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .social {
+    display: none;
+  }
+
+  #aboutus {
+    overflow: hidden;
+  }
+
+  .two {
+    flex-direction: column-reverse;
+    gap: 0;
+
+  }
+
+  .trio-popis {
+    padding-top: 3em;
+  }
+
+  .trio-fotka {
+    padding-top: 0;
+  }
+}
+
+//orientacia na vysku
+@media screen and (orientation: portrait) {
+  main {
+    min-width: 100vw;
+    margin: 0;
+  }
+}
+
+
+//* {outline: 2px solid black;}
