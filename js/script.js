@@ -12,9 +12,6 @@ $(function(){
 
 
 	menuLinks.on('click', function(event) {
-		//toto zabrani aby sme preblikli(isli naprv dole potom hore a az potom animacia scrollovania)
-		//event.preventDefault();
-
         var id = this.hash;
 
 		//animacia scroll na prislusne miesto

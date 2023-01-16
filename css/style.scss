@@ -1,5 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
+@import 'dropdown';
+
 @font-face {
   font-family: DS;
   src: url(../fonts/DS/DancingScript-VariableFont_wght.ttf);
@@ -46,6 +48,10 @@ a {
   color: white;
 }
 
+.nav {
+  display: none;
+}
+
 // HEADER
 .menu {
   background-color: rgba($color: #000000, $alpha: 0.7);
@@ -79,7 +85,7 @@ a {
   display: none;
 }
 
-.nav {
+.navigacia {
   display: flex;
   gap: 2em;
 }
@@ -313,14 +319,23 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .logo {
+  /*.logo {
     font-size: 1.6em;
-  }
+  }*/
 
   .panel {
-    letter-spacing: 0em;
-    font-size: 0.8em;
-    gap: 0.4em;
+    display: none;
+  }
+
+  .h-l {
+    min-width: 50vw;
+    & a {
+      min-width: 100%;
+    }
+  }
+  
+  .nav {
+    display: block;
   }
 }
 
@@ -328,14 +343,6 @@ a {
   #top {
     background-repeat: no-repeat;
     background-size: 250%;
-  }
-  
-  .menu .container {
-    margin: 0 0.2em;
-  }
-
-  .logo-br {
-    display: block;
   }
 
   .trio-popis {
