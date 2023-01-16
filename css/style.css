@@ -1,73 +1,4 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-/*body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background: $cor-3;
-}
-
-nav {
-  ul {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-
-h1 {
-  width: 500px;
-  margin: 100px auto 20px;
-  color: #f0f0f0;
-  text-align: center;
-}*/
-.nav {
-  margin: 0 auto;
-  color: #f0f0f0;
-}
-.nav a {
-  display: block;
-  padding: 0 16px;
-  line-height: inherit;
-  cursor: pointer;
-}
-.nav__menu {
-  line-height: 45px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.nav__menu-item {
-  display: inline-block;
-  position: relative;
-  font-size: 1.3em;
-}
-.nav__menu-item:hover .nav__submenu {
-  display: inline-block;
-  position: fixed;
-  top: 3.8em;
-  right: 0;
-}
-.nav__submenu {
-  font-weight: 300;
-  text-transform: none;
-  display: none;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-.nav__submenu-item:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-
 @font-face {
   font-family: DS;
   src: url(../fonts/DS/DancingScript-VariableFont_wght.ttf);
@@ -85,7 +16,7 @@ html {
   text-align: center;
 }
 
-.container {
+.cont {
   margin: 0 4em;
 }
 
@@ -102,7 +33,7 @@ a {
   color: white;
 }
 
-.nav {
+.container {
   display: none;
 }
 
@@ -160,6 +91,62 @@ a {
 }
 .social a:focus, .social a:hover {
   color: #FA9494;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: var(--gap);
+       column-gap: var(--gap);
+  padding: 0.6rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+  border: none;
+  box-shadow: var(--shadow);
+  position: relative;
+  font-size: 1.4em;
+}
+
+.bx {
+  font-size: 1.1rem;
+}
+
+.dropdown {
+  position: absolute;
+  top: 4.7em;
+  right: 0;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  margin-top: 0.3rem;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: var(--gap);
+       column-gap: var(--gap);
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown a:hover {
+  background-color: var(--color);
+  color: white;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0rem);
 }
 
 #top {
@@ -275,7 +262,7 @@ a {
   }
 }
 @media screen and (max-width: 1000px) {
-  .container {
+  .cont {
     margin: 0 2em;
   }
   .trio-popis {
@@ -315,7 +302,7 @@ a {
   }
 }
 @media screen and (max-width: 650px) {
-  .container {
+  .cont {
     margin: 0 1em;
   }
   .logo {
@@ -346,7 +333,7 @@ a {
   .h-l a {
     min-width: 100%;
   }
-  .nav {
+  .container {
     display: block;
   }
 }

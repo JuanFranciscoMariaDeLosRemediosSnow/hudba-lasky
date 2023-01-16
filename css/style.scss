@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
-@import 'dropdown';
+//@import 'dropdown';
 
 @font-face {
   font-family: DS;
@@ -20,6 +20,8 @@
 // VARIABLES
 
 $bg-color-1: #FA9494;
+$bg-color-menu: rgba($color: #000000, $alpha: 0.7);
+$base-font-color: white;
 
 // GENERAL
 
@@ -31,7 +33,7 @@ html{
 
 //body {height: 500vh;}
 
-.container {
+.cont {
 margin: 0 4em;
 }
 
@@ -45,16 +47,16 @@ li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: $base-font-color;
 }
 
-.nav {
+.container {
   display: none;
 }
 
 // HEADER
 .menu {
-  background-color: rgba($color: #000000, $alpha: 0.7);
+  background-color: $bg-color-menu;
   position: fixed;
   z-index: 2;
   top: 0px;
@@ -74,7 +76,7 @@ a {
   font-family: 'DS';
   font-weight: 100;
   font-size: 3em;
-  color: white;
+  color: $base-font-color;
   &:focus,
   &:hover {
     color: $bg-color-1;
@@ -112,6 +114,63 @@ a {
   }
 }
 
+// DROPDOWN
+
+.btn {
+  background-color: rgba(0, 0, 0, 0);
+  color: $base-font-color;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: var(--gap);
+  padding: 0.6rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+  border: none;
+  box-shadow: var(--shadow);
+  position: relative;
+  font-size: 1.4em;
+}
+
+.bx {
+  font-size: 1.1rem;
+}
+
+.dropdown {
+  position: absolute;
+  top: 4.7em;
+  right: 0;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  margin-top: 0.3rem;
+  background: $bg-color-menu;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap);
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: $base-font-color;
+}
+
+.dropdown a:hover {
+  background-color: var(--color);
+  color: $base-font-color;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+
 // TOP
 
 #top {
@@ -123,7 +182,7 @@ a {
   background-position-y: 0px;
 }
 
-// ABOUTU
+// ABOUTUS
 
 #aboutus {
   background-color: $bg-color-1;
@@ -153,7 +212,7 @@ a {
 }
 
 .trio-popis {
-  color: white;
+  color: $base-font-color;
   padding: 0 2em;
 }
 
@@ -181,7 +240,7 @@ a {
 }
 
 .prac {
-  color: white;
+  color: $base-font-color;
 }
 
 // REVIEWS
@@ -244,7 +303,7 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
-  .container {
+  .cont {
     margin: 0 2em;
   }
   
@@ -295,7 +354,7 @@ a {
 }
 
 @media screen and (max-width: 650px) {
-  .container {
+  .cont {
     margin: 0 1em;
   }
 
@@ -334,7 +393,7 @@ a {
     }
   }
   
-  .nav {
+  .container {
     display: block;
   }
 }
