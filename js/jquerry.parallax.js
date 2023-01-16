@@ -37,7 +37,7 @@
 					winTop = $win.scrollTop(); // chceme odchytit, kolko sme prescrollovali od vrchu stranky
 
 				// vypocitame novu Y poziciu backgroundu
-				var newBgTop = Math.floor( (bgTop + startingPosition.top - winTop) * settings.friction );
+				var newBgTop = Math.floor( (bgTop + startingPosition.top + winTop) * settings.friction );
 
 				// nastavime elementu novu poziciu 
 				element.css({ backgroundPosition: startingPosition.left + ' ' + newBgTop + 'px' });	

@@ -20,6 +20,6 @@ $(function(){
 
 (function($) {
     
-    $('#top').parallax({ friction: -0.8 });
+    $('#top').parallax({ friction: 0.3 });
 
 })(jQuery);
