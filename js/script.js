@@ -1,4 +1,4 @@
-(function(){
+$(function(){
 	var menu = $('.vrch'),
 		menuLinks= menu.find('a');
 

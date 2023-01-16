@@ -1,4 +1,4 @@
-;(function($, window, document, undefined) {
+(function($, window, document, undefined) {
 	
 	$.fn.parallax = function( options ) {
 
@@ -47,4 +47,4 @@
 
 	}
 
-})($jQuery, window, document);
+})(jQuery, window, document);
