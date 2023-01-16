@@ -2,9 +2,18 @@ $(function(){
 	var menu = $('.vrch'),
 		menuLinks= menu.find('a');
 
+    $('.h-l').find('a').on('click', function(event) {
+		event.preventDefault();
+    });
+
+    $('.panel').find('a').on('click', function(event) {
+		event.preventDefault();
+    });
+
+
 	menuLinks.on('click', function(event) {
 		//toto zabrani aby sme preblikli(isli naprv dole potom hore a az potom animacia scrollovania)
-		event.preventDefault();
+		//event.preventDefault();
 
         var id = this.hash;
 
