@@ -10,6 +10,10 @@ $(function(){
 		event.preventDefault();
     });
 
+    $('.nav').find('a').on('click', function(event) {
+		event.preventDefault();
+    });
+
 
 	menuLinks.on('click', function(event) {
         var id = this.hash;
