@@ -16,7 +16,15 @@ html {
   text-align: center;
 }
 
-.cont {
+main {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  perspective: 3px;
+  scroll-behavior: smooth;
+}
+
+.container {
   margin: 0 4em;
 }
 
@@ -33,13 +41,14 @@ a {
   color: white;
 }
 
-.container {
+.nav-button {
   display: none;
 }
 
 .menu {
   background-color: rgba(0, 0, 0, 0.7);
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 2;
   top: 0px;
   right: 0;
@@ -51,7 +60,6 @@ a {
   justify-content: space-between;
   align-items: center;
   letter-spacing: 0.1em;
-  height: 5em;
 }
 
 .logo {
@@ -150,11 +158,16 @@ a {
 }
 
 #top {
-  min-height: 100vh;
+  height: 100vh;
   background: url(../img/top.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
   background-position-x: center;
-  background-position-y: 0px;
+  background-position-y: 0em;
+  transform: translateZ(-22px) scale(8.7);
+  z-index: -1;
 }
 
 #aboutus {
@@ -253,6 +266,9 @@ a {
   }
 }
 @media screen and (max-width: 1100px) {
+  #top {
+    background-size: 180%;
+  }
   .au-text {
     font-size: 1.1em;
     line-height: 1.2em;
@@ -262,7 +278,7 @@ a {
   }
 }
 @media screen and (max-width: 1000px) {
-  .cont {
+  .container {
     margin: 0 2em;
   }
   .trio-popis {
@@ -302,7 +318,7 @@ a {
   }
 }
 @media screen and (max-width: 650px) {
-  .cont {
+  .container {
     margin: 0 1em;
   }
   .logo {
@@ -333,7 +349,7 @@ a {
   .h-l a {
     min-width: 100%;
   }
-  .container {
+  .nav-button {
     display: block;
   }
 }
