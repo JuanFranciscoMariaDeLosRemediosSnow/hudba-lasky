@@ -20,7 +20,7 @@ $(function(){
         var id = this.hash;
 
 		//animacia scroll na prislusne miesto
-		$('html,body').animate({scrollTop: $(id).offset().top}, 2000, function() {
+		$('html,body').animate({scrollTop: $(id).offset().top}, 1000, function() {
 			//prida hash do adresy
 			window.location.hash = id;
 		});
@@ -40,12 +40,12 @@ $(function(){
 
 const dropdownBtn = document.getElementById("btn");
 const dropdownMenu = document.getElementById("dropdown");
-const toggleArrow = document.getElementById("arrow");
+//const toggleArrow = document.getElementById("arrow");
 
 // Toggle dropdown function
 const toggleDropdown = function () {
   dropdownMenu.classList.toggle("show");
-  toggleArrow.classList.toggle("arrow");
+  //toggleArrow.classList.toggle("arrow");
 };
 
 // Toggle dropdown open/close when dropdown button is clicked
