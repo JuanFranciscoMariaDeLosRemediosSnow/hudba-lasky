@@ -26,9 +26,9 @@ $base-font-color: white;
 // GENERAL
 
 html{
-    font-family: 'Quicksand', 'Montserrat';
-    text-align: center;
-    //scroll-behavior: smooth;
+  font-family: 'Quicksand', 'Montserrat';
+  text-align: center;
+  //scroll-behavior: smooth;
 }
 
 main {
@@ -63,11 +63,11 @@ a {
 // HEADER
 .menu {
   background-color: $bg-color-menu;
-  position: sticky;
-  z-index: 2;
-  top: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0vh;
   right: 0;
-  left: 0;
+  left: 0px;
 }
 
 .vrch {
@@ -235,87 +235,27 @@ a {
 
 // VIDEO
 
-#video {
+#gallery {
   background-color: #272727;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-
-  & img {
-  display: block;
-  max-width: 100%;
-  height: 70vh;
-  width: fit-content;
-  margin-bottom: 1.5rem;
-  }
-
-  & ul {
-    padding: 0;
-    margin: 0;
-    display: block;
-    width: 100%;
-    overflow-y: hidden;
-    overflow-x: auto;
-    white-space: nowrap;
-    text-align: center;
-    scroll-behavior: smooth;
-  }
- 
-  li {
-    position: -webkit-sticky;
-    position: sticky;
-    left: 0;
-    //width: min(50vw, 350px);
-    display: inline-block;
-    text-align: center;
-    background-color: #16171f;
-    color: #9b9dad;
-    padding-bottom: 1.5rem;
-    font-size: clamp(18px, 2.5vw, 22px);
-    box-shadow: -10px 0 30px 0 rgba(#000, 0.25);
-    margin-left: -4px;
+  & .gallery-set {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 8em 0 1em 0;
+    & a {
+      width: 300px;
+      height: 300px;
+      background-size: cover;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 
 }
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-/*
-*,
-body,
-html {
-  &::-webkit-scrollbar {
-    background-color: #1e1f26;
-    height: 20px;
-    width: 20px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: #383d4d;
-    border-radius: 99em;
-    border: 6px solid #1e1f26;
-  }
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  background-color: #1e1f26;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}*/
 
 // REVIEWS
 
