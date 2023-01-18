@@ -207,15 +207,15 @@ a {
 }
 
 .gallery-background {
-  height: 132vh;
+  height: 100vh;
   width: 100vw;
-  background: url(../img/gallery-background.jpg);
+  background: url(../img/marvin-van-beek-liuWJ2EHDnY-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   display: flex;
   background-position-x: center;
-  transform: translateZ(-2px) translateY(21vh) scale(1.8);
+  transform: translateZ(-3px) translateY(6vh) scale(2.1);
   z-index: -1;
 }
 
@@ -236,9 +236,11 @@ a {
   background-size: cover;
   background-position: center center;
   border-radius: 0.5em;
+  filter: grayscale(80%);
+  transition-duration: 0.5s;
 }
 .gallery-set a:hover {
-  opacity: 0.5;
+  filter: grayscale(0%);
 }
 
 #reviews {
@@ -251,6 +253,7 @@ a {
 
 #contact {
   background-color: #181818;
+  color: white;
   min-height: 100vh;
   display: flex;
   justify-content: center;

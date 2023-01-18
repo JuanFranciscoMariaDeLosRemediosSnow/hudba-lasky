@@ -200,7 +200,7 @@ a {
   background-color: $bg-color-1;
   min-height: 100vh;
   max-height: 100vh;
-
+  //opacity: 0.5;
 }
 
 .au-nadpis {
@@ -237,15 +237,15 @@ a {
 // GALLERY
 
 .gallery-background {
-  height: 132vh;
+  height: 100vh;
   width: 100vw;
-  background: url(../img/gallery-background.jpg);
+  background: url(../img/marvin-van-beek-liuWJ2EHDnY-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   display: flex;
   background-position-x: center;
-  transform: translateZ(-2px) translateY(21vh) scale(1.8);
+  transform: translateZ(-3px) translateY(6vh) scale(2.1);
   z-index: -1;
 }
 
@@ -266,8 +266,11 @@ a {
     background-size: cover;
     background-position: center center;
     border-radius: 0.5em;
+    filter: grayscale(80%);
+    transition-duration: 0.5s;
     &:hover {
-      opacity: 0.5;
+      //opacity: 0.5;
+      filter: grayscale(0%);
     }
   }
 }
@@ -280,12 +283,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  //opacity: 0.5;
 }
 
 // CONTACT
 
 #contact {
   background-color: #181818;
+  color: $base-font-color;
   min-height: 100vh;
   display: flex;
   justify-content: center;
