@@ -179,7 +179,7 @@ a {
 
 // TOP
 
-#top {
+.top {
   height: 100vh;
   background: url(../img/top.jpg);
   background-size: cover;
@@ -190,7 +190,7 @@ a {
   //justify-content: center;
   background-position-x: center;
   background-position-y: 0em;
-  transform: translateZ(-7px) scale(3.6);
+  transform: translateZ(-3px) scale(2.1);
   z-index: -1;
 }
 
@@ -200,6 +200,7 @@ a {
   background-color: $bg-color-1;
   min-height: 100vh;
   max-height: 100vh;
+
 }
 
 .au-nadpis {
@@ -233,28 +234,42 @@ a {
   padding-top: 3em;
 }
 
-// VIDEO
+// GALLERY
+
+.gallery-background {
+  height: 132vh;
+  width: 100vw;
+  background: url(../img/gallery-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: flex;
+  background-position-x: center;
+  transform: translateZ(-2px) translateY(21vh) scale(1.8);
+  z-index: -1;
+}
 
 #gallery {
-  background-color: #272727;
   min-height: 100vh;
-  & .gallery-set {
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-    padding: 8em 0 1em 0;
-    & a {
-      width: 300px;
-      height: 300px;
-      background-size: cover;
-      &:hover {
-        opacity: 0.5;
-      }
+  //background: #181818;
+}
+
+.gallery-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding: 8em 0 1em 0;
+  & a {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0.5em;
+    &:hover {
+      opacity: 0.5;
     }
   }
-
 }
 
 // REVIEWS
@@ -321,7 +336,7 @@ a {
 
 @media screen and (max-width: 1000px) {
   .container {
-    margin: 0 2em;
+    margin: 0 2.5em;
   }
   
   .trio-popis {
@@ -368,11 +383,18 @@ a {
   .trio-fotka {
     padding-top: 0;
   }
+
+  .gallery-set {
+    & a {
+      width: 200px;
+      height: 200px;
+    }
+  }
 }
 
 @media screen and (max-width: 650px) {
   .container {
-    margin: 0 1em;
+    margin: 0 1.5em;
   }
 
   .logo {
@@ -417,6 +439,13 @@ a {
   .nav-button {
     display: block;
   }
+
+  .gallery-set {
+    & a {
+      width: 150px;
+      height: 150px;
+    }
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -436,6 +465,13 @@ a {
     font-size: 0.8em;
     line-height: 0.8em;
   }
+
+  .gallery-set {
+    & a {
+      width: 120px;
+      height: 120px;
+    }
+  }
 }
 
 //orientacia na vysku
@@ -445,6 +481,3 @@ a {
     margin: 0;
   }
 }
-
-
-//* {outline: 2px solid black;}

@@ -156,7 +156,7 @@ a {
   transform: translateY(0rem);
 }
 
-#top {
+.top {
   height: 100vh;
   background: url(../img/top.jpg);
   background-size: cover;
@@ -165,7 +165,7 @@ a {
   display: flex;
   background-position-x: center;
   background-position-y: 0em;
-  transform: translateZ(-7px) scale(3.6);
+  transform: translateZ(-3px) scale(2.1);
   z-index: -1;
 }
 
@@ -206,24 +206,38 @@ a {
   padding-top: 3em;
 }
 
+.gallery-background {
+  height: 132vh;
+  width: 100vw;
+  background: url(../img/gallery-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: flex;
+  background-position-x: center;
+  transform: translateZ(-2px) translateY(21vh) scale(1.8);
+  z-index: -1;
+}
+
 #gallery {
-  background-color: #272727;
   min-height: 100vh;
 }
-#gallery .gallery-set {
-  min-height: 100vh;
+
+.gallery-set {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1em;
   padding: 8em 0 1em 0;
 }
-#gallery .gallery-set a {
+.gallery-set a {
   width: 300px;
   height: 300px;
   background-size: cover;
+  background-position: center center;
+  border-radius: 0.5em;
 }
-#gallery .gallery-set a:hover {
+.gallery-set a:hover {
   opacity: 0.5;
 }
 
@@ -279,7 +293,7 @@ a {
 }
 @media screen and (max-width: 1000px) {
   .container {
-    margin: 0 2em;
+    margin: 0 2.5em;
   }
   .trio-popis {
     padding-left: 0;
@@ -316,10 +330,14 @@ a {
   .trio-fotka {
     padding-top: 0;
   }
+  .gallery-set a {
+    width: 200px;
+    height: 200px;
+  }
 }
 @media screen and (max-width: 650px) {
   .container {
-    margin: 0 1em;
+    margin: 0 1.5em;
   }
   .logo {
     font-size: 2em;
@@ -355,6 +373,10 @@ a {
   .nav-button {
     display: block;
   }
+  .gallery-set a {
+    width: 150px;
+    height: 150px;
+  }
 }
 @media screen and (max-width: 400px) {
   #top {
@@ -369,6 +391,10 @@ a {
   .au-text {
     font-size: 0.8em;
     line-height: 0.8em;
+  }
+  .gallery-set a {
+    width: 120px;
+    height: 120px;
   }
 }
 @media screen and (orientation: portrait) {
