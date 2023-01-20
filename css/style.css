@@ -25,7 +25,7 @@ main {
 }
 
 .container {
-  margin: 0 4em;
+  margin: 0 2em;
 }
 
 ul {
@@ -47,7 +47,7 @@ a {
 
 .menu {
   background-color: rgba(0, 0, 0, 0.7);
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0vh;
   right: 0;
@@ -156,16 +156,22 @@ a {
   transform: translateY(0rem);
 }
 
+#pseudo-head {
+  height: 102px;
+  background-color: white;
+}
+
 .top {
-  height: 100vh;
+  height: calc(100vh - 102px);
   background: url(../img/top.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  top: 0;
   display: flex;
   background-position-x: center;
   background-position-y: 0em;
-  transform: translateZ(-2.8px) scale(2);
+  transform: translateZ(-2.8px) scale(2.1);
   z-index: -1;
 }
 
@@ -208,15 +214,20 @@ a {
 }
 
 .gallery-header {
-  height: 10em;
+  display: flex;
+  justify-content: center;
+  height: 102px;
   background-color: white;
   color: black;
   text-align: left;
   z-index: -3;
-}
-.gallery-header h4 {
   position: -webkit-sticky;
   position: sticky;
+  top: 10em;
+}
+.gallery-header h4 {
+  align-self: center;
+  margin-top: 50px;
   top: 50px;
   font-family: "DS";
   font-weight: 100;
@@ -353,6 +364,9 @@ a {
   .panel {
     font-size: 1em;
   }
+  .gallery-header {
+    height: 92px;
+  }
 }
 @media screen and (max-width: 800px) {
   .social {
@@ -395,6 +409,9 @@ a {
   .au-text {
     font-size: 1em;
     line-height: 1em;
+  }
+  .gallery-header {
+    height: 80px;
   }
 }
 @media screen and (max-width: 500px) {
