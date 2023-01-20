@@ -165,7 +165,7 @@ a {
   display: flex;
   background-position-x: center;
   background-position-y: 0em;
-  transform: translateZ(-3px) scale(2.1);
+  transform: translateZ(-2.8px) scale(2);
   z-index: -1;
 }
 
@@ -208,9 +208,22 @@ a {
 }
 
 .gallery-header {
-  height: 6.4em;
-  background-color: rgb(255, 255, 255);
+  height: 10em;
+  background-color: white;
+  color: black;
   text-align: left;
+  z-index: -3;
+}
+.gallery-header h4 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  font-family: "DS";
+  font-weight: 100;
+  font-size: 3em;
+  color: black;
+  margin: 0;
+  text-align: center;
 }
 
 .gallery {
@@ -218,6 +231,7 @@ a {
   padding: 2px;
   transition: 0.3s;
   background-color: white;
+  bottom: 50vh;
 }
 .gallery:hover .gallery__image {
   filter: grayscale(1);
