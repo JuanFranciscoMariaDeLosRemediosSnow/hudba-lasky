@@ -179,18 +179,14 @@ a {
 
 
 // TOP
-#pseudo-head {
-  height: 102px;
-  background-color: white;
-}
 
 .top {
-  height: calc(100vh - 102px);
+  height: 100vh;
   background: url(../img/top.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  top: 0;
+  top: 34px;
   display: flex;
   //align-items: center;
   //justify-content: center;
@@ -355,7 +351,10 @@ a {
   .menu {
     right: 17px;
   }
-  
+
+  .top {
+    top: 60px;
+  }
 }
 
 @media screen and (max-width: 1350px) {
