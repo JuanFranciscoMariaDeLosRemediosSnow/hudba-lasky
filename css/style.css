@@ -46,19 +46,25 @@ a {
 }
 
 .menu {
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 1;
-  top: 0vh;
+  top: 0px;
   right: 0;
   left: 0px;
+  height: 0;
 }
 
 .vrch {
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: space-between;
   align-items: center;
   letter-spacing: 0.1em;
+}
+
+.h-l {
+  margin-left: 1em;
 }
 
 .logo {
@@ -78,6 +84,7 @@ a {
 .navigacia {
   display: flex;
   gap: 2em;
+  margin-right: 1em;
 }
 
 .panel {
@@ -208,6 +215,13 @@ a {
   padding-top: 3em;
 }
 
+#gallery {
+  position: absolute;
+  width: 100vw;
+  height: 102px;
+  background-color: #FA9494;
+}
+
 .gallery-header {
   display: flex;
   justify-content: center;
@@ -233,11 +247,13 @@ a {
 }
 
 .gallery {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 102px;
   display: flex;
   padding: 2px;
   transition: 0.3s;
   background-color: white;
-  bottom: 50vh;
 }
 .gallery:hover .gallery__image {
   filter: grayscale(1);
@@ -281,6 +297,10 @@ a {
   opacity: 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
   transition: 0.3s;
+}
+
+.gallery-bottom {
+  height: 102px;
 }
 
 #reviews {
