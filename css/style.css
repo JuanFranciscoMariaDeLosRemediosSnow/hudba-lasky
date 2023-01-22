@@ -227,30 +227,6 @@ a {
   background-color: #FA9494;
 }
 
-.gallery-header {
-  display: flex;
-  justify-content: center;
-  height: 102px;
-  background-color: white;
-  color: black;
-  text-align: left;
-  z-index: -3;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10em;
-}
-.gallery-header h4 {
-  align-self: center;
-  margin-top: 50px;
-  top: 50px;
-  font-family: "DS";
-  font-weight: 100;
-  font-size: 3em;
-  color: black;
-  margin: 0;
-  text-align: center;
-}
-
 .gallery {
   position: -webkit-sticky;
   position: sticky;
@@ -306,6 +282,7 @@ a {
 
 .gallery-bottom {
   height: 102px;
+  background-color: #FA9494;
 }
 
 #reviews {
@@ -387,8 +364,14 @@ a {
   .panel {
     font-size: 1em;
   }
-  .gallery-header {
-    height: 92px;
+  #gallery {
+    height: 91px;
+  }
+  .gallery {
+    top: 91px;
+  }
+  .gallery-bottom {
+    height: 91px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -410,10 +393,6 @@ a {
   .trio-fotka {
     padding-top: 0;
   }
-  .gallery-set a {
-    width: 200px;
-    height: 200px;
-  }
 }
 @media screen and (max-width: 650px) {
   .container {
@@ -426,15 +405,21 @@ a {
     font-size: 0.8em;
     gap: 0.5em;
   }
+  #gallery {
+    height: 80px;
+  }
+  .gallery {
+    top: 80px;
+  }
+  .gallery-bottom {
+    height: 80px;
+  }
   .au-nadpis {
     font-size: 2em;
   }
   .au-text {
     font-size: 1em;
     line-height: 1em;
-  }
-  .gallery-header {
-    height: 80px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -456,10 +441,6 @@ a {
   .nav-button {
     display: block;
   }
-  .gallery-set a {
-    width: 150px;
-    height: 150px;
-  }
 }
 @media screen and (max-width: 400px) {
   #top {
@@ -474,10 +455,6 @@ a {
   .au-text {
     font-size: 0.8em;
     line-height: 0.8em;
-  }
-  .gallery-set a {
-    width: 120px;
-    height: 120px;
   }
 }
 @media screen and (orientation: portrait) {
