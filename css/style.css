@@ -154,7 +154,8 @@ a {
   background-color: var(--color);
   color: white;
 }
-.dropdown .dropdown-social {
+
+.dropdown-social {
   display: flex;
 }
 

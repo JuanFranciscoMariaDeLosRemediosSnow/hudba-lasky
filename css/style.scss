@@ -179,10 +179,10 @@ a {
     background-color: var(--color);
     color: $base-font-color;
   }
+}
 
-  & .dropdown-social {
-    display: flex;
-  }
+.dropdown-social {
+  display: flex;
 }
 
 .show {
