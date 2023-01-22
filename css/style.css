@@ -24,6 +24,10 @@ main {
   scroll-behavior: smooth;
 }
 
+section {
+  min-height: 100vh;
+}
+
 .container {
   margin: 0 2em;
 }
@@ -171,7 +175,6 @@ a {
 }
 
 .top {
-  height: 100vh;
   background: url(../img/top-alt.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -186,8 +189,6 @@ a {
 
 #aboutus {
   background-color: #FA9494;
-  min-height: 100vh;
-  max-height: 100vh;
   opacity: 1;
 }
 
@@ -289,7 +290,6 @@ a {
 
 #reviews {
   background-color: #FA9494;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,7 +299,6 @@ a {
 #contact {
   background-color: #181818;
   color: white;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
