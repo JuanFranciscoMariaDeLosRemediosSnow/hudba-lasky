@@ -429,6 +429,12 @@ a {
   }
   .gallery {
     top: 80px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+  }
+  .gallery__column {
+    width: 100%;
   }
   .gallery-bottom {
     height: 80px;
