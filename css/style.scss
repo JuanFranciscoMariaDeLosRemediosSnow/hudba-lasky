@@ -350,6 +350,25 @@ a {
   align-items: center;
 }
 
+// LIGHTBOX
+
+#overlay {
+	background: rgba(0,0,0,.7);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	text-align: center;
+}
+
+#overlay img {
+	margin-top: 10%;
+	border: 5px solid white;
+	border-radius: 5px;
+}
+
 // MEDIA
 @media screen and (min-width: 1100px) {
   .menu {
@@ -503,10 +522,6 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  /*.logo {
-    font-size: 1.6em;
-  }*/
-
   #top {
     background-size: 250%;
   }
