@@ -168,7 +168,7 @@ a {
   transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
   & a {
     display: flex;
-    align-items: center;
+    align-items: center; 
     column-gap: var(--gap);
     padding: 0.8rem 1rem;
     text-decoration: none;
