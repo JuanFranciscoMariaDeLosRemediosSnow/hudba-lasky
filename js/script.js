@@ -24,31 +24,31 @@
 
 // Lightbox
 
-var gallery = $('.gallery');
+  var gallery = $('.gallery');
 
-// vytvorime si overlay
-var overlay = $('<div>', { id: 'overlay' });
-overlay.appendTo('body').hide();
+  // vytvorime si overlay
+  var overlay = $('<div>', { id: 'overlay' });
+  overlay.appendTo('body').hide();
 
-overlay.on('click', function() {
-$(this).fadeOut('fast');
-});
-
-
-// skryjeme overlay na escape
-$(document).on('keyup', function(event) {
-if ( event.which === 27 ) overlay.fadeOut('fast');
-});
+  overlay.on('click', function() {
+  $(this).fadeOut('fast');
+  });
 
 
-// po kliknuti zobrazime lightbox
-gallery.find('a').on('click', function(event)
-{
-var href = $(this).attr('href'),
-  image = $('<img>', { src: href, attr: 'HL' });
+  // skryjeme overlay na escape
+  $(document).on('keyup', function(event) {
+  if ( event.which === 27 ) overlay.fadeOut('fast');
+  });
 
-overlay.html( image )
-     .show();
 
-event.preventDefault();
-});
+  // po kliknuti zobrazime lightbox
+  gallery.find('a').on('click', function(event)
+  {
+  var href = $(this).attr('href'),
+    image = $('<img>', { src: href, attr: 'HL' });
+
+  overlay.html( image )
+      .show();
+
+  event.preventDefault();
+  });
