@@ -166,20 +166,23 @@ a {
   opacity: 0;
   transform: translateY(0.5rem);
   transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
-}
+  & a {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap);
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    color: $base-font-color;
+  }
 
-.dropdown a {
-  display: flex;
-  align-items: center;
-  column-gap: var(--gap);
-  padding: 0.8rem 1rem;
-  text-decoration: none;
-  color: $base-font-color;
-}
+  & a:hover {
+    background-color: var(--color);
+    color: $base-font-color;
+  }
 
-.dropdown a:hover {
-  background-color: var(--color);
-  color: $base-font-color;
+  & .dropdown-social {
+    display: flex;
+  }
 }
 
 .show {
