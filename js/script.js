@@ -45,7 +45,7 @@ if ( event.which === 27 ) overlay.fadeOut('fast');
 gallery.find('a').on('click', function(event)
 {
 var href = $(this).attr('href'),
-  image = $('<img>', { src: href, attr: 'learn2code' });
+  image = $('<img>', { src: href, attr: 'HL' });
 
 overlay.html( image )
      .show();

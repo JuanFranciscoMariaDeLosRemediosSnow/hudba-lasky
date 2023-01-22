@@ -364,9 +364,11 @@ a {
 }
 
 #overlay img {
-	margin-top: 10%;
+	margin-top: $big-screen-menu-height;
 	border: 5px solid white;
 	border-radius: 5px;
+  max-width: 90%;
+  max-height: 80vh;
 }
 
 // MEDIA
