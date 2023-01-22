@@ -163,9 +163,14 @@ a {
   transform: translateY(0rem);
 }
 
+.hudba {
+  max-width: 20vw;
+  height: 10vh;
+}
+
 .top {
   height: 100vh;
-  background: url(../img/top.jpg);
+  background: url(../img/top-alt.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -256,7 +261,7 @@ a {
   background-color: white;
 }
 .gallery:hover .gallery__image {
-  filter: grayscale(1);
+  filter: grayscale(0.8);
 }
 .gallery__column {
   display: flex;
