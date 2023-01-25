@@ -1,7 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
-//@import 'dropdown';
-
 @font-face {
   font-family: DS;
   src: url(../fonts/DS/DancingScript-VariableFont_wght.ttf);
@@ -22,6 +20,7 @@
 $bg-color-1: #FA9494;
 $bg-color-menu: rgba($color: #000000, $alpha: 0.7);
 $base-font-color: white;
+
 $work-opacity: 1;
 
 $big-screen-menu-height: 102px;
@@ -71,7 +70,6 @@ a {
 
 // HEADER
 .menu {
-
   position: sticky;
   z-index: 1;
   top: 0px;
@@ -204,7 +202,7 @@ a {
 }
 
 .top {
-  background: url(../img/top-alt.jpg);
+  background: url(../img/top.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -337,10 +335,14 @@ a {
 #reviews {
   background-color: $bg-color-1;
   display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: $work-opacity;
 }
+
+.rev-one {
+  background-color: #FA9494;
+  border-radius: 1em;
+}
+
 
 // CONTACT
 

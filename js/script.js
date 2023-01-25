@@ -29,17 +29,15 @@
   // vytvorime si overlay
   var overlay = $('<div>', { id: 'overlay' });
   overlay.appendTo('body').hide();
-
+  
   overlay.on('click', function() {
   $(this).fadeOut('fast');
   });
-
 
   // skryjeme overlay na escape
   $(document).on('keyup', function(event) {
   if ( event.which === 27 ) overlay.fadeOut('fast');
   });
-
 
   // po kliknuti zobrazime lightbox
   gallery.find('a').on('click', function(event)

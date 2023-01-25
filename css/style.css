@@ -175,7 +175,7 @@ a {
 }
 
 .top {
-  background: url(../img/top-alt.jpg);
+  background: url(../img/top.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -291,9 +291,12 @@ a {
 #reviews {
   background-color: #FA9494;
   display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 1;
+}
+
+.rev-one {
+  background-color: #FA9494;
+  border-radius: 1em;
 }
 
 #contact {
