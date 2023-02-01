@@ -379,9 +379,7 @@ a {
 #contact {
   background-color: #181818;
   color: $base-font-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: $small-screen-menu-height;
 }
 
 // LIGHTBOX
