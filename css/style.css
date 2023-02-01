@@ -428,6 +428,10 @@ a {
   .gallery-bottom {
     height: 91px;
   }
+  .recenzie {
+    top: 91px;
+    min-height: calc(100vh - 91px);
+  }
 }
 @media screen and (max-width: 800px) {
   .social {
@@ -484,6 +488,8 @@ a {
   }
   .recenzie {
     grid-template-columns: auto;
+    top: 80px;
+    min-height: calc(100vh - 80px);
   }
   .recenzie div {
     margin: 1em 0;
