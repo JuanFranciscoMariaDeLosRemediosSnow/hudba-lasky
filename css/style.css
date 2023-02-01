@@ -14,6 +14,7 @@
 html {
   font-family: "Quicksand", "Montserrat";
   text-align: center;
+  box-sizing: border-box;
 }
 
 main {
@@ -290,17 +291,42 @@ a {
 
 #reviews {
   background-color: #FA9494;
-  display: flex;
-  opacity: 1;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  min-height: 100vh;
 }
 
-.rev-one {
-  background-color: #FA9494;
-  border-radius: 1em;
+.recenzie {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 102px;
+  display: grid;
+  padding: 0 1em;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  min-height: calc(100vh - 102px);
+  opacity: 1;
+}
+.recenzie div {
+  color: rgb(48, 48, 48);
+  width: 90%;
+  height: 90%;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.recenzie div p {
+  margin: 0.5em;
+}
+.recenzie div span {
+  font-weight: 900;
+  font-style: italic;
+  text-align: right;
+  margin: 0.5em;
+}
+
+.pseudo-reviews {
+  height: 102px;
 }
 
 #contact {
@@ -455,6 +481,12 @@ a {
   .au-text {
     font-size: 1em;
     line-height: 1em;
+  }
+  .recenzie {
+    grid-template-columns: auto;
+  }
+  .recenzie div {
+    margin: 1em 0;
   }
 }
 @media screen and (max-width: 500px) {
