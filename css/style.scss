@@ -336,6 +336,10 @@ a {
   background-color: $bg-color-1;
   display: flex;
   opacity: $work-opacity;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .rev-one {

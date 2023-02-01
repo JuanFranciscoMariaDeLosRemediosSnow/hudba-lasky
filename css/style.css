@@ -292,6 +292,10 @@ a {
   background-color: #FA9494;
   display: flex;
   opacity: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .rev-one {
