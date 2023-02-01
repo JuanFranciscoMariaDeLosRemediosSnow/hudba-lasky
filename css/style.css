@@ -224,10 +224,7 @@ a {
   padding-top: 3em;
 }
 
-#gallery {
-  position: absolute;
-  width: 100vw;
-  height: 102px;
+.galeria {
   background-color: #FA9494;
 }
 
@@ -417,9 +414,6 @@ a {
   .panel {
     font-size: 1em;
   }
-  #gallery {
-    height: 91px;
-  }
   .gallery {
     top: 91px;
   }
@@ -461,9 +455,6 @@ a {
   .panel {
     font-size: 0.8em;
     gap: 0.5em;
-  }
-  #gallery {
-    height: 80px;
   }
   .gallery {
     top: 80px;

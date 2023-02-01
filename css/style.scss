@@ -255,11 +255,7 @@ a {
 }
 
 // GALLERY
-
-#gallery {
-  position: absolute;
-  width: 100vw;
-  height: $big-screen-menu-height;
+.galeria {
   background-color: $bg-color-1;
 }
 
@@ -341,12 +337,10 @@ a {
   position: sticky;
   top: $big-screen-menu-height;
   display: grid;
-  //gap: 1em;
   padding: 0 1em;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
   min-height: calc(100vh - $big-screen-menu-height);
-  //max-height: calc(100vh - $big-screen-menu-height);
   opacity: $work-opacity;
   & div {
     color: rgb(48, 48, 48);
@@ -357,7 +351,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    //background-color: rgb(36, 50, 61);
     & p {
       margin: 0.5em;
     }
@@ -481,10 +474,6 @@ a {
   .panel {
     font-size: 1em;
   }
-
-  #gallery {
-    height: $middle-screen-menu-height;
-  }
   
   .gallery {
     top: $middle-screen-menu-height;
@@ -539,10 +528,6 @@ a {
   .panel {
     font-size: 0.8em;
     gap: 0.5em;
-  }
-
-  #gallery {
-    height: $small-screen-menu-height;
   }
   
   .gallery {
