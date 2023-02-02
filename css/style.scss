@@ -18,6 +18,7 @@
 // VARIABLES
 
 $bg-color-1: #FA9494;
+$bg-color-2: rgb(242, 136, 252);
 $bg-color-menu: rgba($color: #000000, $alpha: 0.7);
 $base-font-color: white;
 
@@ -329,7 +330,7 @@ a {
 // REVIEWS
 
 #reviews {
-  background-color: $bg-color-1;
+  background-color: $bg-color-2;
   min-height: 100vh;
 }
 
@@ -343,7 +344,7 @@ a {
   min-height: calc(100vh - $big-screen-menu-height);
   opacity: $work-opacity;
   & div {
-    color: rgb(48, 48, 48);
+    //color: rgb(29, 29, 29);
     width: 90%;
     height: 90%;
     justify-self: center;
@@ -355,7 +356,7 @@ a {
       margin: 0.5em;
     }
     & span {
-      font-weight: 900;
+      font-weight: 600;
       font-style: italic;
       text-align: right;
       margin: 0.5em;
@@ -373,6 +374,32 @@ a {
   background-color: #181818;
   color: $base-font-color;
   height: $small-screen-menu-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & a:hover {
+    color: $bg-color-2;
+  }
+}
+
+.contact {
+  & a {
+    margin-right: 1em;
+  }
+  & i {
+    font-style: normal;
+    margin-right: 0.5em;
+  }
+}
+
+.break {
+  display: none;
+}
+
+.footer-social-media {
+  display: flex;
+  margin-left: 1em;
+  gap: 1em;
 }
 
 // LIGHTBOX
@@ -580,6 +607,10 @@ a {
   }
   
   .nav-button {
+    display: block;
+  }
+
+  .break {
     display: block;
   }
 }
